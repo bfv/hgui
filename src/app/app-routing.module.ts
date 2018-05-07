@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { MainPageComponent } from './base/main-page/main-page.component';
 
 const routes: Routes = [
-  { path: 'admin', loadChildren: 'app/admin/admin.module#AdminModule' }
+  { path: 'main', component: MainPageComponent},
+  { path: 'admin', loadChildren: './admin/admin.module#AdminModule' },
+  { path: '', redirectTo: '/main', pathMatch: 'full' },
 ];
 
 @NgModule({

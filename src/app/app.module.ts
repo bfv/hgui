@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ThirdpartyModule } from './base/thirdparty/thirdparty.module';
+import { BaseModule } from './base/base.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { ThirdpartyModule } from './base/thirdparty/thirdparty.module';
     BrowserModule,
     AppRoutingModule,
     NgbModule.forRoot(),
-    ThirdpartyModule,
+    BaseModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
